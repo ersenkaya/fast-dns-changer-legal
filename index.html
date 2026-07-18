@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNS Changer — Privacy Policy</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+    color: #1a1a1a;
+  }
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.3em; margin-top: 1.8em; }
+  .updated { color: #666; font-size: 0.9em; margin-bottom: 2em; }
+  a { color: #2563EB; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — DNS Changer</h1>
+<p class="updated">Last updated: 2026-07-18</p>
+
+<h2>Overview</h2>
+<p>DNS Changer ("the app", "we", "us") is a utility app that lets you choose which DNS resolver
+your device uses. This policy explains what data we collect, why, and how it's used.</p>
+
+<h2>What we collect</h2>
+<ul>
+<li><strong>Device identifier</strong>: a platform-stable device ID (iOS
+<code>identifierForVendor</code>, Android <code>ANDROID_ID</code>) used to enforce plan-based
+device limits and to let you use the app as a guest without creating an account.</li>
+<li><strong>Account information</strong> (only if you create an account or sign in): email
+address, and — if you sign in with Google — the basic profile information Google provides
+(name, email).</li>
+<li><strong>DNS server selection</strong>: which DNS server (from our list, or one you added
+yourself) you've selected. We do not log or inspect the content of your DNS queries or browsing
+activity.</li>
+<li><strong>Usage analytics</strong>: aggregate, non-identifying events such as which DNS server
+was selected (via Firebase Analytics), used to understand feature usage.</li>
+<li><strong>Crash and diagnostic data</strong>: automatically collected via Firebase Crashlytics
+if the app encounters an error, to help us fix bugs.</li>
+<li><strong>Push notification token</strong>: if notifications are enabled, a device token used
+to deliver notifications to you.</li>
+<li><strong>Subscription status</strong>: if you subscribe to a paid plan, purchase status is
+managed by Apple/Google's app store billing systems and RevenueCat; we do not collect your
+payment details directly.</li>
+</ul>
+
+<h2>What we don't do</h2>
+<ul>
+<li>We do not sell your data to third parties.</li>
+<li>We do not inspect, log, or store the contents of your DNS queries or general network
+traffic.</li>
+<li>Free-tier ads (via Google AdMob) may use their own identifiers per Apple/Google's respective
+ad policies — see Google's own privacy policy for details on AdMob data handling.</li>
+</ul>
+
+<h2>How the DNS feature works</h2>
+<p>When you select a DNS server, the app changes your device's DNS resolver to the one you
+chose, using the platform's own system APIs (on iOS, <code>NEDNSSettingsManager</code>; on
+Android, a <code>VpnService</code> that intercepts only DNS traffic on port 53). This is limited
+to DNS resolution — the app does not route, inspect, or proxy your general internet traffic.</p>
+
+<h2>Your choices</h2>
+<ul>
+<li>You can use the app as a guest without providing an email address.</li>
+<li>You can delete your account from within the app; note that this does not automatically
+cancel an active App Store/Play Store subscription — those must be cancelled through the
+respective store.</li>
+<li>You can disable notifications from your device's system settings.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>Questions about this policy can be sent to:
+<a href="mailto:kareller.ek@gmail.com">kareller.ek@gmail.com</a></p>
+
+<h2>Changes to this policy</h2>
+<p>We may update this policy as the app changes. Material changes will be reflected here with
+an updated "Last updated" date.</p>
+
+</body>
+</html>
