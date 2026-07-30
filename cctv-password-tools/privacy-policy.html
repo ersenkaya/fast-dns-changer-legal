@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — CCTV Password Tools</title>
+<style>
+  :root {
+    --bg: #f6f6f3;
+    --paper: #ffffff;
+    --ink: #1a1e1c;
+    --muted: #5c6560;
+    --accent: #0e6b5c;
+    --accent-soft: #e3f0ec;
+    --line: #dfe2dc;
+    --mono-tint: #eef1ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101413;
+      --paper: #161b19;
+      --ink: #e7ebe8;
+      --muted: #9aa7a1;
+      --accent: #57d9bb;
+      --accent-soft: #16332c;
+      --line: #262d2a;
+      --mono-tint: #1c2220;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101413;
+    --paper: #161b19;
+    --ink: #e7ebe8;
+    --muted: #9aa7a1;
+    --accent: #57d9bb;
+    --accent-soft: #16332c;
+    --line: #262d2a;
+    --mono-tint: #1c2220;
+  }
+  :root[data-theme="light"] {
+    --bg: #f6f6f3;
+    --paper: #ffffff;
+    --ink: #1a1e1c;
+    --muted: #5c6560;
+    --accent: #0e6b5c;
+    --accent-soft: #e3f0ec;
+    --line: #dfe2dc;
+    --mono-tint: #eef1ee;
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--accent-soft); }
+
+  .doc {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 96px;
+  }
+
+  header.mast {
+    padding: 56px 0 28px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 40px;
+  }
+  .eyebrow {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+    flex: none;
+  }
+  h1 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    font-size: 13.5px;
+    color: var(--muted);
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  .meta b { color: var(--ink); font-weight: 600; }
+
+  nav.toc {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 48px;
+  }
+  nav.toc p {
+    margin: 0 0 10px;
+    font-size: 12.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  nav.toc ol {
+    columns: 2;
+    column-gap: 28px;
+    margin: 0;
+    padding: 0 0 0 1.2em;
+    font-size: 14.5px;
+  }
+  nav.toc li { break-inside: avoid; margin-bottom: 6px; }
+  nav.toc a { color: var(--ink); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+
+  section {
+    margin-bottom: 40px;
+    scroll-margin-top: 24px;
+  }
+  h2 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+    font-weight: 400;
+    font-size: 21px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin: 0 0 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  h2 .num {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 15.5px;
+    font-weight: 700;
+    margin: 22px 0 8px;
+  }
+  p { margin: 0 0 14px; max-width: 65ch; }
+  ul { margin: 0 0 14px; padding-left: 1.3em; }
+  li { margin-bottom: 6px; max-width: 62ch; }
+  a { color: var(--accent); }
+  strong { font-weight: 650; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    background: var(--mono-tint);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+
+  .table-wrap { overflow-x: auto; margin: 0 0 16px; border: 1px solid var(--line); border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 480px; }
+  th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--mono-tint);
+  }
+  tr:last-child td { border-bottom: none; }
+  td code { white-space: nowrap; }
+
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    font-size: 14.5px;
+    margin: 0 0 16px;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer a { color: var(--muted); }
+
+  @media (max-width: 520px) {
+    header.mast { padding-top: 36px; }
+    h1 { font-size: 27px; }
+    nav.toc ol { columns: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="doc">
+
+  <header class="mast">
+    <div class="eyebrow">CCTV Password Tools · Android application</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <span><b>Effective date:</b> July 30, 2026</span>
+      <span><b>Package:</b> com.kareller.cctvpassword</span>
+      <span><b>Contact:</b> kareller.ek@gmail.com</span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>In this document</p>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#no-collect">Information the app itself does not collect</a></li>
+      <li><a href="#third-party">Information collected by third-party services</a></li>
+      <li><a href="#permissions">Permissions requested</a></li>
+      <li><a href="#sharing">Data sharing</a></li>
+      <li><a href="#choices">Your choices &amp; rights</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#retention">Data retention &amp; security</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2><span class="num">01</span> Overview</h2>
+    <p>
+      CCTV Password Tools ("the app") is a utility that calculates manufacturer default and
+      time-based reset passwords for DVR/NVR devices (Hikvision, Dahua, Xiongmai/XM, TVT,
+      RaySharp, iCatch, KBVision, Streamax, Fuho, and related OEM brands), based on the date
+      you enter and the country you select.
+    </p>
+    <p>
+      All password calculations are performed <strong>locally on your device</strong>. The app
+      does not ask you to create an account, does not require you to enter any camera or DVR
+      login credentials, and does not transmit the dates, device models, or results you
+      calculate to the developer or to any server we control.
+    </p>
+    <p>
+      The app does include third-party advertising and analytics libraries, described below,
+      which operate independently of the app's core functionality and collect data under
+      their own privacy terms.
+    </p>
+  </section>
+
+  <section id="no-collect">
+    <h2><span class="num">02</span> Information the app itself does not collect</h2>
+    <p>We do not collect, store, or transmit:</p>
+    <ul>
+      <li>Your name, email address, or any account/registration data — there is no account system.</li>
+      <li>DVR/NVR passwords, usernames, IP addresses of your cameras, or any input you type into the calculator screens.</li>
+      <li>Photos, videos, or files from your device.</li>
+      <li>Precise (GPS) location.</li>
+    </ul>
+  </section>
+
+  <section id="third-party">
+    <h2><span class="num">03</span> Information collected by third-party services</h2>
+    <p>
+      The app is funded by advertising and uses the following Google services, which may
+      collect data as described in their own privacy policies:
+    </p>
+
+    <h3>Google AdMob (ads)</h3>
+    <p>
+      Displays banner, interstitial, and native ads inside the app. AdMob may collect the
+      advertising identifier (<code>AD_ID</code>), IP address (used to derive an approximate
+      region), device and app information, and ad interaction data, in order to serve and
+      measure ads. In the European Economic Area, UK, and Switzerland, ad personalization is
+      subject to the consent choices described below.
+    </p>
+
+    <h3>Google User Messaging Platform (UMP / consent management)</h3>
+    <p>
+      Used to show a consent form to users in regions covered by GDPR/UK data protection law
+      and to store your consent choice (e.g. personalized vs. non-personalized ads) locally
+      and with Google, so the app can respect it on future launches.
+    </p>
+
+    <h3>Firebase Analytics</h3>
+    <p>
+      Collects usage analytics such as screens viewed, app opens, general device/app
+      information (device model, OS version, language, approximate region), and app
+      diagnostics, to help us understand feature usage and improve the app. This data is
+      associated with an app-instance identifier, not with your name or contact details.
+    </p>
+
+    <div class="callout">
+      <p>
+        These providers act as independent data controllers for the data they collect. Review
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>
+        and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How Google uses data when you use AdMob partner sites or apps</a>
+        for details on what each service collects and how to control it.
+      </p>
+    </div>
+  </section>
+
+  <section id="permissions">
+    <h2><span class="num">04</span> Permissions requested</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>INTERNET</code></td>
+            <td>Required to load ads and send anonymous analytics events.</td>
+          </tr>
+          <tr>
+            <td><code>AD_ID</code></td>
+            <td>Allows AdMob to access the Android advertising identifier for ad serving and measurement, subject to your consent choice and system-level ad settings.</td>
+          </tr>
+          <tr>
+            <td><code>WRITE_EXTERNAL_STORAGE</code></td>
+            <td>Declared for compatibility with older Android versions; the app does not write personal files, photos, or documents to shared storage.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="num">05</span> Data sharing</h2>
+    <p>
+      We do not sell your data. We do not share any data with third parties beyond the
+      advertising and analytics providers named in Section 3, who receive data directly as
+      part of operating their own SDKs embedded in the app, not as a separate transfer
+      initiated by us.
+    </p>
+    <p>We may disclose information if required to do so by law, or to protect the rights, property, or safety of the app, its developer, or users.</p>
+  </section>
+
+  <section id="choices">
+    <h2><span class="num">06</span> Your choices &amp; rights</h2>
+    <ul>
+      <li><strong>Ad personalization:</strong> if you are in the EEA, UK, or Switzerland, you can change your consent choice at any time from the consent dialog shown by the app; elsewhere, you can limit ad tracking from your device's Settings → Google → Ads.</li>
+      <li><strong>Reset advertising ID:</strong> Settings → Google → Ads → Reset advertising ID (or the equivalent on your Android version).</li>
+      <li><strong>Uninstalling the app</strong> stops all further data collection by the app and its embedded SDKs going forward.</li>
+      <li><strong>GDPR (EEA/UK):</strong> you may request access to, correction of, or deletion of personal data held by Google's services via Google's own account controls, since the app itself retains no server-side personal data of its own.</li>
+      <li><strong>CCPA (California):</strong> we do not sell personal information as defined by the CCPA.</li>
+    </ul>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">07</span> Children's privacy</h2>
+    <p>
+      The app is a technical utility intended for installers and technicians and is not
+      directed at children under 13. We do not knowingly collect personal information from
+      children. If you believe a child has provided personal information through the app's
+      third-party services, please contact us so we can address it.
+    </p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">08</span> Data retention &amp; security</h2>
+    <p>
+      Because the app does not operate its own backend, it retains no server-side copy of
+      your activity. Data collected by Google's AdMob, UMP, and Firebase Analytics is
+      retained according to Google's own retention schedules, described in the policies
+      linked in Section 3.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">09</span> Changes to this policy</h2>
+    <p>
+      We may update this policy from time to time, for example to reflect changes in the
+      libraries the app uses. Changes will be posted to this page with an updated effective
+      date. Continued use of the app after a change constitutes acceptance of the revised
+      policy.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">10</span> Contact</h2>
+    <p>
+      Questions about this policy or how the app handles data can be sent to
+      <a href="mailto:kareller.ek@gmail.com">kareller.ek@gmail.com</a>.
+    </p>
+  </section>
+
+  <footer>
+    <p>CCTV Password Tools — Privacy Policy · Last updated July 30, 2026</p>
+  </footer>
+</div>
+</body>
+</html>
