@@ -1,102 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DNS Changer — Privacy Policy</title>
+<title>Network Tools - Gizlilik Politikası</title>
 <style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    max-width: 720px;
-    margin: 40px auto;
-    padding: 0 20px;
-    line-height: 1.6;
-    color: #1a1a1a;
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #2563eb;
+    --border: #e5e5e5;
+    --card: #f7f7f8;
   }
-  h1 { font-size: 1.8em; }
-  h2 { font-size: 1.3em; margin-top: 1.8em; }
-  .updated { color: #666; font-size: 0.9em; margin-bottom: 2em; }
-  a { color: #2563EB; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #ededed;
+      --muted: #a3a3a3;
+      --accent: #60a5fa;
+      --border: #2a2a2a;
+      --card: #1c1c1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin: 0 0 8px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    color: var(--accent);
+  }
+  h3 {
+    font-size: 1.02rem;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  p, li { color: var(--fg); }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 20px;
+    font-size: 0.94rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
 </style>
 </head>
 <body>
+<div class="wrap">
 
-<h1>Privacy Policy — DNS Changer</h1>
-<p class="updated">Last updated: 2026-08-10</p>
+<header>
+  <h1>Network Tools — Gizlilik Politikası</h1>
+  <div class="meta">Son güncelleme: 3 Ekim 2026</div>
+</header>
 
-<h2>Overview</h2>
-<p>DNS Changer ("the app", "we", "us") is an Android utility app that lets you choose which DNS
-resolver your device uses. The app does not require an account — there is no sign-in, and no
-per-device limit. The app is free to use, with an optional Pro subscription (see below). This
-policy explains what data we collect, why, and how it's used.</p>
+<p>KARELab ("biz", "bize", "bizim") olarak, Network Tools mobil uygulamasını ("Uygulama") kullanan kullanıcılarımızın gizliliğine önem veriyoruz. Bu Gizlilik Politikası, Uygulamayı kullandığınızda hangi bilgilerin toplandığını, nasıl kullanıldığını ve haklarınızın neler olduğunu açıklar.</p>
 
-<h2>What we collect</h2>
+<h2>1. Topladığımız Bilgiler</h2>
+<p>Uygulamayı kullandığınızda aşağıdaki bilgiler otomatik olarak toplanabilir:</p>
 <ul>
-<li><strong>DNS server selection</strong>: which DNS server (from our list, or one you added
-yourself) you've selected. We do not log or inspect the content of your DNS queries or browsing
-activity.</li>
-<li><strong>Custom DNS servers you add (Pro feature)</strong>: names and IP addresses of any
-custom DNS entries you create are stored locally on your device only. We do not receive or store
-them on our servers.</li>
-<li><strong>Usage analytics</strong>: aggregate, non-identifying events (via Firebase Analytics)
-used to understand feature usage.</li>
-<li><strong>Advertising data (Free plan only)</strong>: the app shows ads via Google AdMob to
-users on the Free plan. AdMob may use the advertising ID and other identifiers to serve and
-measure ads, subject to the consent choices you make in the in-app privacy/consent prompt
-(Google's User Messaging Platform). See Google's own privacy policy for details on AdMob data
-handling.</li>
-<li><strong>Subscription status (Pro plan)</strong>: if you subscribe to Pro, your purchase is
-processed entirely by Google Play — we never see or store your payment details. To confirm and
-manage your entitlement, subscription status is shared with our subscription infrastructure
-provider, RevenueCat, which receives a device/account identifier and purchase status from Google
-Play. See <a href="https://www.revenuecat.com/privacy/">RevenueCat's privacy policy</a> for
-details.</li>
+  <li>Cihazınızın IP adresi</li>
+  <li>Ziyaret edilen ekranlar, ziyaret tarihi ve saati</li>
+  <li>Uygulamada geçirilen süre ve kullanım sıklığı</li>
+  <li>Mobil işletim sistemi ve cihaz bilgisi (marka, model, OS sürümü)</li>
+  <li>Çerezler ve benzeri izleme teknolojileri (SDK, pixel) aracılığıyla toplanan veriler</li>
+  <li>Network Tools Pro'ya abone olursanız: anonim bir uygulama kullanıcı kimliği ve satın alma bilgisi (bkz. Bölüm 4)</li>
+</ul>
+<p>Uygulama, ağ tanılama araçları sunduğundan (ping, port tarama, DNS sorgulama vb.) bu işlevleri yerine getirmek için gerekli ağ bilgilerine (yerel IP, bağlı olduğunuz ağın bilgileri) erişebilir. Bu bilgiler cihazınızda işlenir ve tarafımıza aktarılmaz; yalnızca yukarıda belirtilen analitik/tanılama verileri üçüncü taraf servislerle paylaşılır.</p>
+
+<h2>2. Bilgilerin Kullanım Amacı</h2>
+<ul>
+  <li>Uygulamanın çalışmasını sağlamak ve iyileştirmek</li>
+  <li>Hata ayıklama ve çökme (crash) analizleri yapmak</li>
+  <li>Kullanım istatistiklerini analiz ederek kullanıcı deneyimini geliştirmek</li>
+  <li>Reklam gösterimi ve reklam performansını ölçmek</li>
+  <li>Network Tools Pro aboneliğinizin doğrulanması ve etkinleştirilmesi</li>
 </ul>
 
-<h2>What we don't do</h2>
+<h2>3. Üçüncü Taraf Servisler</h2>
+<p>Uygulama, aşağıdaki üçüncü taraf hizmetleri kullanır. Bu servislerin kendi gizlilik politikaları geçerlidir:</p>
+<div class="card">
+  <table>
+    <tr><th>Servis</th><th>Amaç</th></tr>
+    <tr><td>Google Play Services</td><td>Temel Android/Google Play işlevselliği</td></tr>
+    <tr><td>AdMob</td><td>Reklam gösterimi</td></tr>
+    <tr><td>Google Analytics for Firebase</td><td>Kullanım analitiği</td></tr>
+    <tr><td>Firebase Crashlytics</td><td>Çökme raporlama</td></tr>
+    <tr><td>RevenueCat</td><td>Network Tools Pro abonelik doğrulaması</td></tr>
+  </table>
+</div>
+<p>Google'ın hizmetlere ilişkin gizlilik uygulamaları hakkında bilgi için: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google Gizlilik ve Şartlar</a>. RevenueCat'in gizlilik politikası için: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</p>
+
+<h2>4. Abonelikler (Network Tools Pro)</h2>
+<p>Network Tools Pro'ya abone olmayı seçerseniz, satın alma işlemi Google Play tarafından yürütülür; ödeme bilgileriniz (kart numarası vb.) bize veya RevenueCat'e hiçbir zaman ulaşmaz. Aboneliğinizin geçerliliğini doğrulamak için RevenueCat'i kullanıyoruz; RevenueCat yalnızca anonim bir uygulama kullanıcı kimliği ve satın alma bilgisi (ürün, tarih, durum) alır — adınızı veya ödeme bilgilerinizi almaz. Aboneliği istediğiniz zaman Google Play üzerinden yönetebilir veya iptal edebilirsiniz.</p>
+
+<h2>5. Veri Saklama Süresi</h2>
 <ul>
-<li>We do not collect an account, email address, or any sign-in information — the app has no
-login of its own (Pro entitlement is tied to your Google Play account, managed by Google Play and
-RevenueCat).</li>
-<li>We do not sell your data to third parties.</li>
-<li>We do not inspect, log, or store the contents of your DNS queries or general network
-traffic.</li>
-<li>We do not track or limit which or how many devices you use the app on.</li>
-<li>We do not show ads to Pro subscribers.</li>
+  <li><strong>Kullanıcı tarafından sağlanan veriler:</strong> Uygulamayı kullandığınız süre boyunca + 12 ay</li>
+  <li><strong>Otomatik toplanan veriler:</strong> En fazla 24 ay</li>
+  <li><strong>Toplu/anonimleştirilmiş veriler:</strong> Süresiz olarak saklanabilir (kişisel veri niteliği taşımaz)</li>
 </ul>
 
-<h2>How the DNS feature works</h2>
-<p>When you select a DNS server, the app changes your device's DNS resolver to the one you
-chose, using Android's <code>VpnService</code> API to intercept only DNS traffic (port 53). This
-is limited to DNS resolution — the app does not route, inspect, or proxy your general internet
-traffic. If you've enabled the DNS changer and your device restarts, the app may restart the
-service so your chosen DNS setting continues to apply.</p>
+<h2>6. Haklarınız</h2>
+<p>Verilerinize erişim, düzeltme veya silinmesini talep etme hakkına sahipsiniz. Talepleriniz için bizimle <a href="mailto:kareller.ek@gmail.com">kareller.ek@gmail.com</a> adresinden iletişime geçebilirsiniz.</p>
 
-<h2>Pro subscription</h2>
-<p>Pro is an optional, auto-renewing subscription (monthly or annual) that removes ads and lets
-you add an unlimited number of custom DNS servers. It is billed and managed entirely through
-Google Play. You can view, manage, or cancel your subscription at any time from your Google Play
-account settings. See our
-<a href="https://privacy-policy.fastdns.app/dns-changer/terms-of-service.html">Terms of
-Service</a> for full subscription terms.</p>
+<h3>Kaliforniya Sakinleri İçin (CCPA/CPRA)</h3>
+<p>Kaliforniya'da ikamet ediyorsanız, hangi kişisel bilgilerin toplandığını öğrenme, bu bilgilerin silinmesini talep etme ve kişisel bilgilerinizin satışından ("opt-out") çıkma hakkına sahipsiniz. Uygulama, kişisel bilgilerinizi para karşılığında satmamaktadır.</p>
 
-<h2>Your choices</h2>
-<ul>
-<li>You can change or revoke your ad consent/personalization choices at any time from the
-Privacy Policy option in the app's settings.</li>
-<li>You can stop the DNS changer service at any time from within the app.</li>
-<li>You can manage or cancel your Pro subscription at any time from your Google Play account
-settings.</li>
-<li>You can uninstall the app at any time, which removes all local app data from your device.</li>
-</ul>
+<h2>7. Çocukların Gizliliği</h2>
+<p>Uygulama, 16 yaşın altındaki çocuklar için tasarlanmamıştır ve bu yaş grubundaki kullanıcılardan bilerek kişisel veri toplanmamaktadır. Bir ebeveyn veya vasi olarak çocuğunuzun bize kişisel bilgi sağladığını fark ederseniz, lütfen bizimle iletişime geçin; bu bilgileri sistemlerimizden sileriz.</p>
 
-<h2>Contact</h2>
-<p>Questions about this policy can be sent to:
-<a href="mailto:kareller.ek@gmail.com">kareller.ek@gmail.com</a></p>
+<h2>8. Veri Güvenliği</h2>
+<p>Verilerinizi yetkisiz erişime, değişikliğe, ifşaya veya imhaya karşı korumak için makul teknik ve idari önlemler alıyoruz. Ancak internet üzerinden hiçbir aktarım veya elektronik depolama yöntemi %100 güvenli değildir.</p>
 
-<h2>Changes to this policy</h2>
-<p>We may update this policy as the app changes. Material changes will be reflected here with
-an updated "Last updated" date.</p>
+<h2>9. Bu Politikadaki Değişiklikler</h2>
+<p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler bu sayfada yayınlanacak ve "Son güncelleme" tarihi buna göre revize edilecektir. Önemli değişikliklerde uygulama içinde bildirim gösterilebilir.</p>
 
+<h2>10. Bize Ulaşın</h2>
+<p>Bu Gizlilik Politikası ile ilgili sorularınız için:</p>
+<div class="card">
+  <p style="margin:0"><strong>KARELab</strong><br>
+  E-posta: <a href="mailto:kareller.ek@gmail.com">kareller.ek@gmail.com</a></p>
+</div>
+
+<footer>
+  © 2026 KARELab — Network Tools Gizlilik Politikası
+</footer>
+
+</div>
 </body>
 </html>
